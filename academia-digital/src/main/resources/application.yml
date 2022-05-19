@@ -1,0 +1,18 @@
+server.port: 8081
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:5432/academiadio?useTimezone=UTC&useLegacyDate
+        username: clesio
+        password: root
+    jpa:
+        show-sql: true
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate.format_sql: true
+           
+loging:
+    level:
+        org:
+            hibernate:
+                type: trace
